@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4cccf04b-32e6-4b52-970c-7386e5167b45">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="6e53e59d-8e7b-4cac-b588-058280891e9d"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="79" forecolor="#FFFFFF" backcolor="#009999" uuid="a344417d-03cd-45e9-b742-1d5ecfe9b408"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="157" y="16" width="467" height="37" forecolor="#33FFFF" uuid="f5e90ad1-fe02-49e2-80d7-bb308604e9a7"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock Report
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="44" width="400" height="20" forecolor="#FFFFFF" uuid="4ad05ea6-55b2-4009-9262-bca6332b649c"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dheerasekara Engineers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="59" width="542" height="20" forecolor="#FFFFFF" uuid="c6895f7b-0d26-4261-8404-e2673b71b0ae"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Msnufsctures of Rice Milling Machinery & Engineering Componets]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="693" y="59" width="109" height="20" forecolor="#FFFFFF" uuid="c88f6f16-6ef1-4c3d-81b6-6c3d87b258b5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="45" y="15" width="100" height="20" uuid="3095434a-9401-4154-bfa2-a7b45a588ee7"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Materials
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="14" width="100" height="20" uuid="f527095d-59af-4590-9ee3-3571595e319d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tools
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="559" y="14" width="100" height="20" uuid="e6166f97-0786-4649-ad02-054818efd758"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Spare Parts
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="15" width="100" height="20" uuid="f9274b3c-e5d9-4398-8121-713bf3893f2a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IN/OUT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="14" width="100" height="20" uuid="d8a1e1d8-9418-417c-9797-b56032a49f25"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IN/OUT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="654" y="15" width="100" height="20" uuid="998ced21-3c09-46bd-910f-31aa5de29562"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IN/OUT]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table" style="table" x="45" y="0" width="695" height="125" uuid="5322072a-2def-4de3-ac60-c2d4835a2763"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="1366e61c-4efc-4d68-a211-f4f7fa6166c9">
+						<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource(1)]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="01e38eba-caa6-4024-b2fa-9699ff5e57f1">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="0258513b-08ae-474a-9879-c0e07e117412">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="8e6f5262-bd00-414f-8189-b3382100aa81">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="08b9ac5d-e88c-4c44-a3c2-f02aed227149">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="91eea8b2-305b-4330-acf0-60d288753bce">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+					<jr:column width="90" uuid="bb60c0d0-cfd6-45ea-b7c9-ddd726b5f401">
+						<jr:tableHeader style="table_TH" height="30"/>
+						<jr:tableFooter style="table_TH" height="30"/>
+						<jr:columnHeader style="table_CH" height="30"/>
+						<jr:columnFooter style="table_CH" height="30"/>
+						<jr:detailCell style="table_TD" height="20"/>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="802" height="54" backcolor="#009999" uuid="9753d53b-b56c-44bd-a81d-8d3e3984ad9e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="209" y="31" width="347" height="20" forecolor="#FFFFFF" uuid="60e1f951-7514-47ac-acd2-07687a0b968b"/>
+				<text><![CDATA[Voice : 041 2222556]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="31" width="358" height="20" forecolor="#FFFFFF" uuid="4f1b5f9d-4855-469c-a3a1-40d4e34ec01b"/>
+				<text><![CDATA[Mobile : 071 4176622]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="31" width="347" height="20" forecolor="#FFFFFF" uuid="cc0e7f45-ddee-437d-8e59-6b2979fdd596"/>
+				<text><![CDATA[Fax : 041 2227558]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="17" width="536" height="20" forecolor="#FFFFFF" uuid="97cfab49-0807-45af-a3aa-12b82731516a"/>
+				<text><![CDATA[No 27/1 Abeygunarathna Mawatha,Pamburana,Matara]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="adc533ae-08c4-4254-a32a-708365204390">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" forecolor="#FFFFFF" backcolor="#009999" uuid="ca8b4ae0-144a-4c38-92de-679d135863c6"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="196" y="38" width="153" height="20" forecolor="#FFFFFF" uuid="b08dbcf3-c5c1-420d-bb36-810e4782e276"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dheerasekara Engineers]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="12" width="141" height="37" forecolor="#33FFFF" uuid="adf69d95-7078-4b60-bfb8-f08292d048af"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salary Sheet]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="56" width="295" height="20" forecolor="#FFFFFF" uuid="679f0071-d463-44f2-afbd-444d2fe42518"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Msnufsctures of Rice Milling Machinery & Engineering Componets]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="411" y="58" width="144" height="20" forecolor="#FFFFFF" uuid="f2c09f47-153f-4268-a50e-c549b3e8ae47"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="0" width="100" height="20" uuid="6a83da2b-3263-4326-9637-7b26b6338e7e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee ID     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="37" width="100" height="20" uuid="2d701e11-5a03-4f56-8f8c-3aff6a8cfa8a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name            :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="0" width="100" height="20" uuid="1f87d858-53b3-4748-b702-917c8a65c1bc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.Hours     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="39" width="100" height="20" uuid="76a67dcc-6206-4f66-9b82-a6cad2f3f8d4"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[O/T Hours]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="109" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="152" splitType="Stretch">
+			<staticText>
+				<reportElement x="342" y="12" width="132" height="20" uuid="f38c3509-b7ae-412a-b12b-e5de45473181"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="46" width="132" height="20" uuid="f89665a4-456f-4ab1-b99c-9576e527e913"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EPF
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="82" width="132" height="20" uuid="2b75da83-886d-419f-9ae4-34a76e64e8b4"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ETF
+]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="54" backcolor="#009999" uuid="3596604f-3d99-4558-bd0c-6b69d4170f34"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="137" y="13" width="289" height="20" forecolor="#FFFFFF" uuid="de96d965-c6c4-4202-82c5-dd58c09bba81"/>
+				<text><![CDATA[No 27/1 Abeygunarathna Mawatha,Pamburana,Matara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="27" width="100" height="20" forecolor="#FFFFFF" uuid="c0075dc1-6d05-43cd-a4ae-b0fcb3652a50"/>
+				<text><![CDATA[Voice : 041 2222556]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="27" width="111" height="20" forecolor="#FFFFFF" uuid="db996426-046a-4254-bb94-64dc50012610"/>
+				<text><![CDATA[Mobile : 071 4176622]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="27" width="100" height="20" forecolor="#FFFFFF" uuid="a46f2ed8-3fa2-49a8-abfc-7e430a31d0e2"/>
+				<text><![CDATA[Fax : 041 2227558]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="43" splitType="Stretch"/>
+	</summary>
+</jasperReport>

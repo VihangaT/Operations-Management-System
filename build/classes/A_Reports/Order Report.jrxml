@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="987cc11f-8761-4452-939c-7a4961dc65d1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" forecolor="#FFFFFF" backcolor="#009999" uuid="c6be2482-6be3-412e-8b55-082e2174ae36"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="157" y="8" width="220" height="37" forecolor="#33FFFF" uuid="8178f419-67fb-4f19-bdda-74636e44a4db"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="136" y="59" width="295" height="20" forecolor="#FFFFFF" uuid="4a6097cd-0983-40e8-b7bb-96a50a9f33d8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Msnufsctures of Rice Milling Machinery & Engineering Componets]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="448" y="59" width="107" height="20" forecolor="#FFFFFF" uuid="01abe03d-78ad-4c98-8c9d-1354f885be7d"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="193" y="36" width="153" height="20" forecolor="#FFFFFF" uuid="dc60c8a6-030a-4108-a89a-d7f5612c9fed"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dheerasekara Engineers]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="22" y="15" width="100" height="20" uuid="cfab5581-40f3-42a3-9e86-1137ca860825"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of Orders]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="22" y="13" width="172" height="20" uuid="97ca546d-e210-40bd-9298-8438063ccb66"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No of Completed Orders]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="41" width="228" height="20" uuid="d965f157-4d82-4c55-be50-27e9e5244659"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order with the largest quantity]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="236" y="17" width="100" height="20" uuid="982462ac-0289-458c-8da8-864c226805e0"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="37" width="100" height="20" uuid="5ee1f1f3-378f-4b83-809c-25eca46850d2"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="71" width="228" height="20" uuid="71afbaf6-1559-4d55-9ef2-3e919c23dec9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Most Recent Order]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="85" width="100" height="20" uuid="4f4cfd4d-a823-4af3-a722-2e8bee18bb3d"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="105" width="100" height="20" uuid="d0a2f683-6fde-4d15-a5de-e9109ebf9def"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Item]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="54" backcolor="#009999" uuid="dd16be20-04fb-43ed-a713-891de5db2f4b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="94" y="27" width="100" height="20" forecolor="#FFFFFF" uuid="5514c825-8180-4574-a634-88db0df1c7f7"/>
+				<text><![CDATA[Voice : 041 2222556]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="137" y="13" width="289" height="20" forecolor="#FFFFFF" uuid="316c82a0-039f-4056-bd17-e81b9f3dddd6"/>
+				<text><![CDATA[No 27/1 Abeygunarathna Mawatha,Pamburana,Matara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="27" width="111" height="20" forecolor="#FFFFFF" uuid="dfddb810-c5ff-4b5c-bc6a-4f25ea1a6903"/>
+				<text><![CDATA[Mobile : 071 4176622]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="335" y="27" width="100" height="20" forecolor="#FFFFFF" uuid="65173dbb-57c5-44ad-8a5b-69a2dc99fe5e"/>
+				<text><![CDATA[Fax : 041 2227558]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
